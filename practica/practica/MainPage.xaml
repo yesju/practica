@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:practica"
+             x:Class="practica.MainPage">
+
+    <StackLayout VerticalOptions="Center">
+        <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" VerticalOptions="Center" TextColor="Gray" HorizontalOptions="Center">Calculadora</Label>
+        <Entry Placeholder="" IsEnabled="False" x:Name="caja" />
+        <Button Text="CE"  Clicked="lim_Clicked"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <Button Text="1" HorizontalOptions="FillAndExpand" Clicked="a_Clicked" />
+            <Button Text="2" HorizontalOptions="FillAndExpand" Clicked="b_Clicked"/>
+            <Button Text="3" HorizontalOptions="FillAndExpand" Clicked="c_Clicked"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="4" HorizontalOptions="FillAndExpand" Clicked="d_Clicked"/>
+            <Button Text="5" HorizontalOptions="FillAndExpand" Clicked="e_Clicked"/>
+            <Button Text="6" HorizontalOptions="FillAndExpand" Clicked="f_Clicked"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="7" HorizontalOptions="FillAndExpand" Clicked="g_Clicked"/>
+            <Button Text="8" HorizontalOptions="FillAndExpand" Clicked="h_Clicked"/>
+            <Button Text="9" HorizontalOptions="FillAndExpand" Clicked="i_Clicked"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <Button Text="0" HorizontalOptions="FillAndExpand" Clicked="j_Clicked"/>
+            <Button Text="/" HorizontalOptions="FillAndExpand" Clicked="k_Clicked"/>
+            <Button Text="-" HorizontalOptions="FillAndExpand" Clicked="r_Clicked"/>
+            <Button Text="sqrt" HorizontalOptions="FillAndExpand" Clicked="l_Clicked"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="+" HorizontalOptions="FillAndExpand" Clicked="suma_Clicked"/>
+            <Button Text="." HorizontalOptions="FillAndExpand" Clicked="punto_Clicked"/>
+            <Button Text="*" HorizontalOptions="FillAndExpand" Clicked="o_Clicked"/>
+            <Button Text="=" HorizontalOptions="FillAndExpand" Clicked="p_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
